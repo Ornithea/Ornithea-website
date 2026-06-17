@@ -42,7 +42,9 @@
     document.querySelectorAll(".nav__tab").forEach(function (a) {
       a.classList.toggle("is-active", a.getAttribute("data-tab") === tab);
     });
-    window.scrollTo(0, 0);
+    var switching = currentTab !== tab;
+    currentTab = tab;
+    if (switching) window.scrollTo(0, 0);
     onScroll();
     // Guarantee the freshly shown panel's content is visible.
     var active = document.querySelector(".tab-panel.is-active");
@@ -59,7 +61,7 @@
         setTimeout(function () {
           var y = t.getBoundingClientRect().top + window.scrollY - 70;
           window.scrollTo({ top: y, behavior: "smooth" });
-        }, 60);
+        }, switching ? 60 : 0);
       }
     }
   }
@@ -81,7 +83,18 @@
     var panel = el && el.closest(".tab-panel");
     if (!panel) return;
     e.preventDefault();
-    setTab(panel.getAttribute("data-tab"), id === "top" ? null : id);
+    var targetTab = panel.getAttribute("data-tab");
+    if (targetTab === currentTab) {
+      // Already on this tab — just scroll, no tab switch needed.
+      if (id !== "top") {
+        var y = el.getBoundingClientRect().top + window.scrollY - 70;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    } else {
+      setTab(targetTab, id === "top" ? null : id);
+    }
   });
 
   /* ---------- Reveal on scroll (robust) ---------- */
