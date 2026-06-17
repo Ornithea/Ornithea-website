@@ -486,21 +486,18 @@ section{ position: relative; }
 .waitlist__bird{ width: 120px; margin: 0 auto 34px; }
 .waitlist h2{ font-family:var(--serif); font-weight:500; font-size: clamp(40px,6.5vw,86px); line-height:0.98; letter-spacing:-0.015em; }
 .waitlist h2 em{ font-style:italic; font-weight:400; }
-.waitlist p{ margin: 26px auto 0; max-width: 46ch; color: var(--ink-soft); font-size:17px; }
+.waitlist p{ margin: 26px auto 0; max-width: 46ch; color: var(--paper); font-size:17px; }
 .signup{ margin: 42px auto 0; display:flex; gap:10px; max-width: 480px; }
 .signup input{
-  flex:1; background: transparent; border:1px solid var(--line-strong); border-radius:999px;
-  padding: 16px 22px; font-family:var(--sans); font-size:14px; color:var(--ink); letter-spacing:.02em;
+  flex:1; background: transparent; border:1px solid color-mix(in srgb,var(--paper) 50%, transparent); border-radius:999px;
+  padding: 16px 22px; font-family:var(--sans); font-size:14px; color:var(--paper); letter-spacing:.02em;
 }
-.signup input::placeholder{ color: color-mix(in srgb,var(--ink) 42%, transparent); }
-/* As soon as an email is typed (placeholder no longer shown) the text turns
-   white so it reads clearly on the dark band. Driven by a CSS var so the
-   Tweaks panel can recolour it. */
-.signup input:not(:placeholder-shown){ color: var(--signup-typed, #ffffff); }
-.signup input:focus{ outline:none; border-color: var(--signup-focus, var(--paper)); }
+.signup input::placeholder{ color: color-mix(in srgb,var(--paper) 50%, transparent); }
+.signup input:not(:placeholder-shown){ color: var(--paper); }
+.signup input:focus{ outline:none; border-color: var(--paper); }
 .signup .btn{ flex-shrink:0; }
-.signup-note{ margin-top:18px; font-size:12px; letter-spacing:.08em; color: var(--ink-soft); }
-.signup--done{ font-family:var(--serif); font-style:italic; font-size:22px; color:var(--ink); }
+.signup-note{ margin-top:18px; font-size:12px; letter-spacing:.08em; color: color-mix(in srgb,var(--paper) 75%, transparent); }
+.signup--done{ font-family:var(--serif); font-style:italic; font-size:22px; color:var(--paper); }
 @media (max-width: 540px){ .signup{ flex-direction:column; border-radius:0; } .signup .btn{ justify-content:center; } }
 
 /* ============================================================
