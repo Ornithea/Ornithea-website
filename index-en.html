@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ORNITHEA · Conscious luxury · Bird conservation</title>
+<meta name="description" content="ORNITHEA — Conscious fashion, bird conservation and scientific purpose. Choose less, but better. EST. 2026." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" id="nav">
+  <a class="nav__brand" href="#top" aria-label="ORNITHEA home">
+    <img src="assets/bird-ink.png" alt="" />
+    <span>ORNITHEA</span>
+  </a>
+  <div class="nav__links" id="navlinks">
+    <a href="#" class="nav__tab is-active" data-tab="home">Home</a>
+    <a href="#" class="nav__tab" data-tab="about">About</a>
+    <a href="#" class="nav__tab" data-tab="nidos">NIDOS</a>
+    <span class="nav__lang"><a href="index.html">ES</a><span class="sep">/</span><a href="index-en.html" class="active">EN</a></span>
+    <a class="nav__cta" href="#" data-tab="home" data-scroll="lista">Waitlist</a>
+  </div>
+  <button class="nav__burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main id="tabs">
+
+<div class="tab-panel is-active" id="tab-home" data-tab="home" role="tabpanel">
+<!-- ============ HERO ============ -->
+<header class="hero hero--photo" id="top" data-screen-label="Hero">
+  <div class="hero__bg">
+    <img src="assets/hero-field.jpg" alt="Woman in a natural-fibre blouse standing in a golden field beneath mountains" />
+  </div>
+  <div class="wrap hero__content">
+    <img class="hero__crest reveal" src="assets/bird-cream.png" alt="ORNITHEA emblem" />
+    <div class="hero__eyebrow reveal" data-d="1">
+      <span class="dot"></span>
+      <span class="eyebrow">Conscious fashion · Bird conservation · Science</span>
+    </div>
+    <h1 class="reveal" data-d="2">Elegance<br /><span class="thin">needs no</span> <em>noise.</em></h1>
+    <p class="hero__sub reveal" data-d="3">Timeless garments in natural fibres, named after the birds of Colombia. Every piece is a small act of protection — and an invitation to dress consciously.</p>
+    <div class="hero__actions reveal" data-d="3">
+      <a href="#colecciones" class="btn">View the collection <span class="arr">→</span></a>
+      <a href="#origen" class="btn btn--ghost">Discover the brand</a>
+    </div>
+    <div class="scrollcue reveal" data-d="4">
+      <span class="line"></span><span>Scroll</span>
+    </div>
+  </div>
+  <span class="hero__ornish">ὄρνις · órnis · «bird»</span>
+  <span class="hero__sidelabel">EST. MMXXVI</span>
+</header>
+
+<!-- ============ MARQUEE ============ -->
+<div class="strip" aria-hidden="true">
+  <div class="marq" id="marq">
+    <span>Linen &amp; organic cotton</span><span>1% of sales to conservation</span><span>Zero virgin microfibres</span><span>Real birdsong in every piece</span><span>Made in Colombia</span><span>Quiet luxury</span>
+    <span>Linen &amp; organic cotton</span><span>1% of sales to conservation</span><span>Zero virgin microfibres</span><span>Real birdsong in every piece</span><span>Made in Colombia</span><span>Quiet luxury</span>
+  </div>
+</div>
+
+<!-- ============ COLLECTIONS — BIRDS (moved up) ============ -->
+<section class="dark section-pad" id="colecciones" data-screen-label="Collections">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-head__kicker">
+        <span class="num-tag">01 — Capsule I</span>
+        <span class="eyebrow">Birds of the territory</span>
+      </div>
+      <h2>Every piece carries the spirit of a bird we protect.</h2>
+    </div>
+    <div class="birds">
+      <article class="bird-card reveal">
+        <div class="bird-card__media">
+          <span class="bird-card__status s-cr"><span class="pip"></span>Critically endangered</span>
+          <button class="bird-card__song" aria-label="Play birdsong"><span class="eq"><i></i><i></i><i></i><i></i></span></button>
+          <image-slot id="slot-garment-1" shape="rect" placeholder="Drop garment photo"></image-slot>
+        </div>
+        <div class="bird-card__body">
+          <span class="bird-card__latin">Crax alberti</span>
+          <h3 class="bird-card__name">Blue-billed Curassow</h3>
+          <p class="bird-card__desc">Long coat in Belgian linen, dyed with natural pigments. Endemic to the Colombian Caribbean.</p>
+          <div class="bird-card__foot">
+            <span class="bird-card__price">$390,000 COP</span>
+            <span class="bird-card__ebird">▸ eBird</span>
+          </div>
+        </div>
+      </article>
+      <article class="bird-card reveal" data-d="1">
+        <div class="bird-card__media">
+          <span class="bird-card__status s-en"><span class="pip"></span>Endangered</span>
+          <button class="bird-card__song" aria-label="Play birdsong"><span class="eq"><i></i><i></i><i></i><i></i></span></button>
+          <image-slot id="slot-garment-2" shape="rect" placeholder="Drop garment photo"></image-slot>
+        </div>
+        <div class="bird-card__body">
+          <span class="bird-card__latin">Thryophilus nicefori</span>
+          <h3 class="bird-card__name">Niceforo's Wren</h3>
+          <p class="bird-card__desc">Fluid shirt in GOTS-certified organic cotton. Endemic to Santander.</p>
+          <div class="bird-card__foot">
+            <span class="bird-card__price">$215,000 COP</span>
+            <span class="bird-card__ebird">▸ eBird</span>
+          </div>
+        </div>
+      </article>
+      <article class="bird-card reveal" data-d="2">
+        <div class="bird-card__media">
+          <span class="bird-card__status s-vu"><span class="pip"></span>Vulnerable</span>
+          <button class="bird-card__song" aria-label="Play birdsong"><span class="eq"><i></i><i></i><i></i><i></i></span></button>
+          <image-slot id="slot-garment-3" shape="rect" placeholder="Drop garment photo"></image-slot>
+        </div>
+        <div class="bird-card__body">
+          <span class="bird-card__latin">Chlorochrysa nitidissima</span>
+          <h3 class="bird-card__name">Multicoloured Tanager</h3>
+          <p class="bird-card__desc">Scarf woven from low-impact plant fibres. Endemic to the Andes.</p>
+          <div class="bird-card__foot">
+            <span class="bird-card__price">$140,000 COP</span>
+            <span class="bird-card__ebird">▸ eBird</span>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="reveal" data-d="2" style="margin-top:46px; font-family:var(--serif); font-style:italic; font-size:18px; color:color-mix(in srgb,var(--paper) 66%, transparent);">Six minutes of birdsong reduce anxiety — Stobbe et&nbsp;al., 2022. Every QR brings that benefit to your day.</p>
+  </div>
+</section>
+
+<!-- ============ WAITLIST ============ -->
+<section class="dark section-pad" id="lista" data-screen-label="Waitlist">
+  <div class="wrap waitlist">
+    <img class="waitlist__bird reveal" src="assets/bird-cream.png" alt="" />
+    <h2 class="reveal" data-d="1">Join the <em>flight.</em></h2>
+    <p class="reveal" data-d="2">The first capsule takes off in 2026. Be among the first to dress consciously — and to receive the story of every bird we protect.</p>
+    <form class="signup reveal" data-d="2" id="signup">
+      <input type="email" id="email" placeholder="you@email.com" aria-label="Email address" required />
+      <button type="submit" class="btn btn--light">Notify me <span class="arr">→</span></button>
+    </form>
+    <p class="signup-note reveal" data-d="3">No spam. Only birds, science and launches.</p>
+  </div>
+</section>
+</div>
+
+<div class="tab-panel" id="tab-about" data-tab="about" role="tabpanel" hidden>
+<!-- ============ ORIGIN ============ -->
+<section class="section-pad" id="origen" data-screen-label="Origin">
+  <div class="wrap">
+    <div class="origen__grid">
+      <div class="origen__copy reveal">
+        <div class="num-tag" style="margin-bottom:22px;">02 — The origin</div>
+        <div class="greek">ὄρνις<small>órnis · «bird» — root of ornithology</small></div>
+        <p class="lead" style="margin-top:34px;">ORNITHEA was born from wonder: the contemplation of birds as a symbol of freedom, serenity and harmony with the living world.</p>
+        <p class="body-copy" style="margin-top:24px;">Through photography and the observation of their habitats, an acute awareness emerges of how fragile these ecosystems are. The <em>fast fashion</em> industry has normalised the disconnection between dressing, life and nature. ORNITHEA responds with a fashion that reconnects people to the world through respect, education and conscious beauty.</p>
+      </div>
+      <div class="origen__media reveal" data-d="1">
+        <image-slot id="slot-origin" shape="rect" placeholder="Drop a bird / habitat photo"></image-slot>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTO (dark) ============ -->
+<section class="dark section-pad" data-screen-label="Manifesto">
+  <div class="wrap manifesto">
+    <img class="manifesto__bird reveal" src="assets/bird-cream.png" alt="" />
+    <h2 class="reveal" data-d="1">We believe that true luxury is <em>silent, honest and coherent.</em> We don't follow fleeting trends: we honour time, quality and intention.</h2>
+    <p class="sig reveal" data-d="2">ORNITHEA is dressing with awareness. It's choosing less, but better.</p>
+  </div>
+</section>
+
+<!-- ============ TERRITORY / PILLARS ============ -->
+<section class="section-pad" id="territorio" data-screen-label="Territory">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-head__kicker">
+        <span class="num-tag">03 — Territory</span>
+        <span class="eyebrow">Where the brand lives</span>
+      </div>
+      <h2>At the intersection of fashion, science and conservation.</h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="pillars">
+      <article class="pillar reveal">
+        <div class="pillar__no">i.</div>
+        <h3>Ethical, responsible fashion</h3>
+        <p>Sustainability as an integral vision, not a marketing attribute. Every decision passes through the same ethical filter.</p>
+        <ul>
+          <li>Natural &amp; recycled materials</li>
+          <li>Circular economy from day one</li>
+          <li>Traceability across the chain</li>
+        </ul>
+      </article>
+      <article class="pillar reveal" data-d="1">
+        <div class="pillar__no">ii.</div>
+        <h3>Quiet luxury</h3>
+        <p>Timeless elegance that is felt, not displayed. <em>Yūgen</em> aesthetics: the deepest beauty is not shouted — it is intuited.</p>
+        <ul>
+          <li>Design that lasts, never trend</li>
+          <li>Emotional &amp; sensory wellbeing</li>
+          <li>Connection with the essential</li>
+        </ul>
+      </article>
+      <article class="pillar reveal" data-d="2">
+        <div class="pillar__no">iii.</div>
+        <h3>Education &amp; conservation</h3>
+        <p>Environmental awareness woven into every garment. Integrated ornithological knowledge and citizen science via eBird.</p>
+        <ul>
+          <li>Each bird's conservation status</li>
+          <li>QR with its real song</li>
+          <li>Global ornithological alliances</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MATERIALS ============ -->
+<section class="section-pad" id="materiales" data-screen-label="Materials">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-head__kicker">
+        <span class="num-tag">04 — Materials</span>
+        <span class="eyebrow">Low impact</span>
+      </div>
+      <h2>What we wear shouldn't cost anyone their flight.</h2>
+    </div>
+    <div class="mats">
+      <ul class="mat-list reveal">
+        <li class="mat-row">
+          <span class="mat-row__no">01</span>
+          <div class="mat-row__name">Linen<small>Captures CO₂ as it grows. Little water, zero pesticides, 100% biodegradable.</small></div>
+          <span class="mat-row__tag">Natural</span>
+        </li>
+        <li class="mat-row">
+          <span class="mat-row__no">02</span>
+          <div class="mat-row__name">Organic cotton<small>91% less water than conventional. No pesticides, GOTS certified, timeless.</small></div>
+          <span class="mat-row__tag">Natural</span>
+        </li>
+        <li class="mat-row">
+          <span class="mat-row__no">03</span>
+          <div class="mat-row__name">Plant fibres<small>Hemp, ramie, kenaf. Low-impact crops — the basis of our future research.</small></div>
+          <span class="mat-row__tag">Natural</span>
+        </li>
+        <li class="mat-row">
+          <span class="mat-row__no">04</span>
+          <div class="mat-row__name">Recycled PET<small>Up to 75% fewer emissions than virgin polyester. A transition solution — not a destination.</small></div>
+          <span class="mat-row__tag" style="color:var(--clay);">Transition</span>
+        </li>
+      </ul>
+      <div class="roadmap reveal" data-d="1">
+        <span class="eyebrow">Roadmap to 100% natural</span>
+        <div class="phase-tabs" id="phaseTabs" style="margin-top:22px;">
+          <button class="phase-tab active" data-nat="70" data-pet="30" data-label="Year 1–2 · Launch">Phase 1</button>
+          <button class="phase-tab" data-nat="85" data-pet="15" data-label="Year 3–4 · Consolidation">Phase 2</button>
+          <button class="phase-tab" data-nat="98" data-pet="2" data-label="Year 5+ · Maturity">Phase 3</button>
+        </div>
+        <div class="road-bar">
+          <div class="nat" id="barNat" style="width:70%;"></div>
+          <div class="pet" id="barPet" style="width:30%;"></div>
+        </div>
+        <div class="road-legend">
+          <span><i style="background:var(--sage);"></i> Natural <b id="legNat" style="font-weight:400;margin-left:4px;">70%</b></span>
+          <span><i style="background:color-mix(in srgb,var(--clay) 60%, var(--paper));"></i> Recycled PET <b id="legPet" style="font-weight:400;margin-left:4px;">30%</b></span>
+        </div>
+        <div class="phase-figs">
+          <div class="phase-fig"><b id="figPhase">70/30</b><span id="figLabel">Year 1–2 · Launch</span></div>
+          <div class="phase-fig"><b>1%</b><span>of sales to conservation</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IMPACT (dark) ============ -->
+<section class="dark section-pad" id="impacto" data-screen-label="Impact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-head__kicker">
+        <span class="num-tag">05 — Impact</span>
+        <span class="eyebrow">What's at stake</span>
+      </div>
+      <h2>The figures that set us flying.</h2>
+    </div>
+    <div class="figs">
+      <div class="fig reveal"><b>43<span class="u">%</span></b><p>of bird populations have vanished since 1970.</p></div>
+      <div class="fig reveal" data-d="1"><b>90<span class="u">%</span></b><p>of seabirds ingest microplastics from textile fibres.</p></div>
+      <div class="fig reveal" data-d="2"><b>×10</b><p>fast-fashion garments replaced by a single ORNITHEA piece.</p></div>
+      <div class="fig reveal" data-d="3"><b>1<span class="u">%</span></b><p>minimum of sales, directed to habitat conservation.</p></div>
+    </div>
+
+    <div class="compare reveal">
+      <div class="cmp-row">
+        <span class="cmp-head">Per garment</span>
+        <span class="cmp-head">Disposable garment</span>
+        <span class="cmp-head orn">ORNITHEA garment</span>
+      </div>
+      <div class="cmp-row">
+        <span class="cmp-cat">Microfibres per wash</span>
+        <span class="cmp-bad">700,000 – 1,000,000</span>
+        <span class="cmp-good">Zero virgin</span>
+      </div>
+      <div class="cmp-row">
+        <span class="cmp-cat">Water in production</span>
+        <span class="cmp-bad">~2,700 litres</span>
+        <span class="cmp-good">Up to 91% less</span>
+      </div>
+      <div class="cmp-row">
+        <span class="cmp-cat">Average uses</span>
+        <span class="cmp-bad">7 times</span>
+        <span class="cmp-good">50 – 70+</span>
+      </div>
+      <div class="cmp-row">
+        <span class="cmp-cat">When discarded</span>
+        <span class="cmp-bad">20 – 200 years</span>
+        <span class="cmp-good">Biodegradable</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDER ============ -->
+<section class="section-pad" id="fundadora" data-screen-label="Founder">
+  <div class="wrap">
+    <div class="founder">
+      <div class="founder__media reveal">
+        <image-slot id="slot-founder" shape="rect" placeholder="Drop founder portrait"></image-slot>
+      </div>
+      <div class="founder__copy reveal" data-d="1">
+        <span class="num-tag" style="display:block;margin-bottom:26px;">06 — The founder</span>
+        <p class="founder__q">«Every garment ORNITHEA creates is, in the most literal scientific sense, <em>a small act of protection</em> for birds and ecosystems.»</p>
+        <div class="founder__by">
+          <b>Sandra Vargas Ph.D.</b>
+          <span>Ph.D. in Psychology · Founder · Scientific, creative, and strategic vision</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="tab-panel" id="tab-nidos" data-tab="nidos" role="tabpanel" hidden>
+<!-- ============ NIDOS (dark) ============ -->
+<section class="dark section-pad" id="nidos" data-screen-label="NIDOS">
+  <div class="wrap">
+    <div class="nidos__head">
+      <div class="reveal">
+        <span class="num-tag" style="display:block;margin-bottom:18px;">07 — Conservation</span>
+        <div class="nidos__mark">NIDOS<small>ORNITHEA Bird Conservation Program · NESTS</small></div>
+      </div>
+      <p class="nidos__quote reveal" data-d="1">«Because every nest we protect is a species that endures.»<span>An ORNITHEA program</span></p>
+    </div>
+
+    <div class="nidos__facts reveal">
+      <div class="nidos__fact"><b>1%</b><span>minimum of net sales, directed each semester to bird conservation.</span></div>
+      <div class="nidos__fact"><b>1 / semester</b><span>a single beneficiary organisation: focused, close and measurable support.</span></div>
+      <div class="nidos__fact"><b>Col · Latam · USA</b><span>program scope, prioritising the Colombian Andes.</span></div>
+    </div>
+
+    <div class="nidos__steps-head reveal">
+      <h3>How to apply</h3>
+      <span class="eyebrow">A simple, rigorous and transparent cycle</span>
+    </div>
+    <div class="nidos__steps">
+      <div class="nidos__step reveal">
+        <span class="n">i.</span>
+        <h4>Open call</h4>
+        <p>We open applications twice a year, online and on social. A 30-day window.</p>
+        <span class="when">January / July</span>
+      </div>
+      <div class="nidos__step reveal" data-d="1">
+        <span class="n">ii.</span>
+        <h4>Application</h4>
+        <p>The organisation submits the official form with a detailed investment plan.</p>
+        <span class="when"><a href="mailto:nidos@ornithea.com">nidos@ornithea.com</a></span>
+      </div>
+      <div class="nidos__step reveal" data-d="2">
+        <span class="n">iii.</span>
+        <h4>Evaluation</h4>
+        <p>A committee scores each application out of 100 points and approves the plan.</p>
+        <span class="when">Selection committee</span>
+      </div>
+      <div class="nidos__step reveal" data-d="3">
+        <span class="n">iv.</span>
+        <h4>Support</h4>
+        <p>The organisation runs the project; funds are disbursed at close, with public reporting.</p>
+        <span class="when">Payment at close</span>
+      </div>
+    </div>
+
+    <div class="nidos__apply">
+      <div class="reveal">
+        <h3>Does your organisation protect wild birds?</h3>
+        <ul class="nidos__elig">
+          <li>Focus on wild birds or their habitats</li>
+          <li>Non-profit, legally registered entity</li>
+          <li>At least 1 year of documented operation</li>
+          <li>Concrete, measurable investment plan</li>
+        </ul>
+      </div>
+      <div class="nidos__cta reveal" data-d="1">
+        <a href="mailto:nidos@ornithea.com?subject=NIDOS%20APPLICATION" class="btn btn--light">Apply to the program <span class="arr">→</span></a>
+        <span class="email"><a href="mailto:nidos@ornithea.com">nidos@ornithea.com</a></span>
+        <span class="deadlines">Applications open in January &amp; July</span>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-screen-label="Footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/wordmark-cream.png" alt="ORNITHEA" />
+        <p>Conscious fashion, bird conservation and scientific purpose. Made in Colombia. Inhabiting the world with sensibility.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Brand</h4>
+        <ul>
+          <li><a href="#colecciones">Collections</a></li>
+          <li><a href="#origen">Origin</a></li>
+          <li><a href="#territorio">Territory</a></li>
+          <li><a href="#fundadora">Founder</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Conservation</h4>
+        <ul>
+          <li><a href="#nidos">NIDOS Program</a></li>
+          <li><a href="#impacto">Impact</a></li>
+          <li><a href="#materiales">Materials</a></li>
+          <li><a href="mailto:nidos@ornithea.com?subject=NIDOS%20APPLICATION">Apply to NIDOS</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#lista">Waitlist</a></li>
+          <li><a href="index.html">Español</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="mailto:hola@ornithea.co">hola@ornithea.co</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 ORNITHEA · Choose less, but better.</span>
+      <div class="allies">
+        <span>Asoc. Colombiana de Ornitología</span>
+        <span>National Audubon Society</span>
+        <span>Cornell Lab · eBird</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="image-slot.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
