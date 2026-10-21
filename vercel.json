@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/p", "destination": "/pasaporte", "permanent": false },
+    { "source": "/P", "destination": "/pasaporte", "permanent": false }
+  ]
+}
